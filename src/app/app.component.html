@@ -1,0 +1,110 @@
+<div class="component">
+	<div class="main">
+		<div class="logo">tec<img alt="X" src="../assets/images/logo_x.png"/>onic</div>
+		<div class="cover">
+			<p>
+				Brian Musinyan was first exposed to programming when he took an introductory C++ 
+				class at Glendale Community College. He was 20 years old then when he realized he 
+				found his true passion. Before that he was always fascinated with web design. 
+				Although he never had a chance of taking web design classes before UCLA; 
+				he still managed to learn Photoshop, CSS and HTML on his own. 
+				Soon he became experienced in C++ and decided to expand his programming 
+				knowledge at University of California, Los Angeles. The trend of self-learning 
+				continued through his community college and university years. 
+			</p>
+		</div>
+		<div class="work">
+			<div [ngx-scroll-to]="projectsRef">
+				<i class="fa fa-mug-hot fa-2x"></i>
+				<p>projects</p>
+			</div>				
+			<div [ngx-scroll-to]="aboutRef">
+				<i class="fa fa-graduation-cap fa-2x"></i> 
+				<p>resume</p>
+			</div>				
+			<div [ngx-scroll-to]="contactRef">
+				<i class="fa fa-envelope fa-2x"></i> 
+				<p>contact me</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- List of my projects -->
+<div class="projects" #projectsRef>
+	<div class="project_card">
+		<img src="../assets/images/proj1.jpeg" class="w100pct">
+		<div>
+			<p>Project name<br> Languages used<br> click to see more</p>
+		</div>
+	</div>
+	<div class="project_card">
+		<img src="../assets/images/2proj.jpeg" class="w100pct">
+		<div>
+			<p>Project name<br> Languages used<br> click to see more</p>
+		</div>
+	</div>
+	<div class="project_card">
+		<img src="../assets/images/3proj.jpeg" class="w100pct">
+		<div>
+			<p>Project name<br> Languages used<br> click to see more</p>
+		</div>
+	</div>
+	<div class="project_card">
+		<img src="../assets/images/proj1.jpeg" class="w100pct">
+		<div>
+			<p>Project name<br> Languages used<br> click to see more</p>
+		</div>
+	</div>
+	<div class="project_card">
+		<img src="../assets/images/2proj.jpeg" class="w100pct">
+		<div>
+			<p>Project name<br> Languages used<br> click to see more</p>
+		</div>
+	</div>
+	<div class="project_card">
+		<img src="../assets/images/3proj.jpeg" class="w100pct">
+		<div>
+			<p>Project name<br> Languages used<br> click to see more</p>
+		</div>
+	</div>
+</div>
+
+<!-- about -->
+<div class="about" #aboutRef>
+	<h2>Brian Musinyan</h2>
+</div>
+
+<!-- Contact me form -->
+<div class="contact" #contactRef>
+	<h2 class="maincolor centered">Contact me for offers and questions?</h2>
+	<form>
+		<mat-form-field class="w100pct" appearance="outline">
+			<mat-label>Subject</mat-label>
+			<input matInput placeholder="Placeholder">
+		</mat-form-field>
+		<mat-form-field class="w100pct" appearance="outline">
+			<mat-label>Email</mat-label>
+			<input type="email" matInput placeholder="Placeholder">
+		</mat-form-field>
+		<mat-form-field class="w100pct" appearance="outline">
+			<mat-label>Message</mat-label>
+			<textarea matInput placeholder="Placeholder"></textarea>
+		</mat-form-field>
+		<button type="submit" mat-stroked-button>
+			<i class="fa fa-paper-plane"></i> Send to Brian</button>
+	</form>
+</div>
+
+<footer>
+	<ul class="social">
+		<li><a href="#" class="ficon fab fa-linkedin"></a></li>
+		<li><a href="#" class="ficon fab fa-github"></a></li>
+		<li><a href="#" class="ficon far fa-envelope"></a></li>
+	</ul>
+	<ul class="credit">
+		<li>Designer & developer: Brian Musinyan</li>
+		<li>&copy; 2019 All rights reserved</li>
+	</ul>
+</footer>
+<!-- <i class="goup fa fa-arrow-alt-circle-up fa-3x"></i> -->
