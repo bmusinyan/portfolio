@@ -1,0 +1,31 @@
+.about {
+    background: #DEE1E6;
+    min-height: 100px;
+    overflow: hidden;
+    padding: 20px 15vw 50px; 
+    height: 100%;
+    color: #272833;
+    position: relative;
+}
+.about header { text-align: center; position: relative; }
+.about header span:not(:first-child) {
+    border-left: 1px solid #a0a0a2;
+    margin-left: 10px;
+    padding-left: 10px; 
+}
+.about header i { cursor: pointer; font-size: 24px; }
+.about header i:hover { color: rgb(222, 79, 79); }
+
+.about aside { width: 150px; display: inline-block; vertical-align: top; }
+.about article { width: calc(100% - 150px); display: inline-block; vertical-align: top; }
+.about article h4 { margin-left: 34px; }
+.about article section { border-left: 2px solid #272833; margin-left: 40px; padding-left: 20px; }
+#_projectlist i { 
+    margin-left: -29px;
+    background: #dee1e6;
+    font-size: 15px;
+}
+
+::ng-deep .about .mat-progress-bar-buffer { background-color: #e9c5c5; }
+::ng-deep .about .mat-progress-bar-fill::after { background-color: #de4f4f; }
+::ng-deep .about .mat-chip.mat-standard-chip { min-height: 24px; }

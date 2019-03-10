@@ -30,70 +30,15 @@
 	</div>
 </div>
 
-<!-- List of my projects -->
-<div class="projects" #projectsRef>
-	<div class="project_card">
-		<img src="../assets/images/proj1.jpeg" class="w100pct">
-		<div>
-			<p>Project name<br> Languages used<br> click to see more</p>
-		</div>
-	</div>
-	<div class="project_card">
-		<img src="../assets/images/2proj.jpeg" class="w100pct">
-		<div>
-			<p>Project name<br> Languages used<br> click to see more</p>
-		</div>
-	</div>
-	<div class="project_card">
-		<img src="../assets/images/3proj.jpeg" class="w100pct">
-		<div>
-			<p>Project name<br> Languages used<br> click to see more</p>
-		</div>
-	</div>
-	<div class="project_card">
-		<img src="../assets/images/proj1.jpeg" class="w100pct">
-		<div>
-			<p>Project name<br> Languages used<br> click to see more</p>
-		</div>
-	</div>
-	<div class="project_card">
-		<img src="../assets/images/2proj.jpeg" class="w100pct">
-		<div>
-			<p>Project name<br> Languages used<br> click to see more</p>
-		</div>
-	</div>
-	<div class="project_card">
-		<img src="../assets/images/3proj.jpeg" class="w100pct">
-		<div>
-			<p>Project name<br> Languages used<br> click to see more</p>
-		</div>
-	</div>
+<!-- The meat -->
+<div #projectsRef>
+	<app-projects></app-projects>
 </div>
-
-<!-- about -->
-<div class="about" #aboutRef>
-	<h2>Brian Musinyan</h2>
+<div #aboutRef>
+	<app-resume></app-resume>
 </div>
-
-<!-- Contact me form -->
-<div class="contact" #contactRef>
-	<h2 class="maincolor centered">Contact me for offers and questions?</h2>
-	<form>
-		<mat-form-field class="w100pct" appearance="outline">
-			<mat-label>Subject</mat-label>
-			<input matInput placeholder="Placeholder">
-		</mat-form-field>
-		<mat-form-field class="w100pct" appearance="outline">
-			<mat-label>Email</mat-label>
-			<input type="email" matInput placeholder="Placeholder">
-		</mat-form-field>
-		<mat-form-field class="w100pct" appearance="outline">
-			<mat-label>Message</mat-label>
-			<textarea matInput placeholder="Placeholder"></textarea>
-		</mat-form-field>
-		<button type="submit" mat-stroked-button>
-			<i class="fa fa-paper-plane"></i> Send to Brian</button>
-	</form>
+<div #contactRef>
+	<app-contact></app-contact>
 </div>
 
 <footer>

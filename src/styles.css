@@ -13,4 +13,22 @@ body, html {
 
 .w100pct { width: 100%;}
 
+.p_left10 { padding-left: 10px; }
+.p_left15 { padding-left: 15px; }
+.p_left20 { padding-left: 20px; }
+
+.p_right10 { padding-right: 10px; }
+
 .maincolor { color: #272833; }
+.pink { color: rgb(222, 79, 79); }
+
+
+.extjs { background:#89c910 !important; color:#203b08 !important; }
+.php { background:#4f5b93 !important; color:#dee1e6 !important; }
+.sqlite { background:#048acc !important; color:#dee1e6 !important; }
+.angular { background:#dd0330 !important; color:#dee1e6 !important; }
+.nodejs { background:#3e863d !important; color:#dee1e6 !important; }
+.html { background:#e44d26 !important; color:#dee1e6 !important; }
+.css { background:#0070b7 !important; color:#dee1e6 !important; }
+.material { background:#1b39a8 !important; color:#dee1e6 !important; }
+.d3 { background:#f68849 !important; color:#452914 !important; }
