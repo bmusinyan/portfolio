@@ -12,10 +12,12 @@ import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
-	{path: '', component: AppComponent },
+	{ path: '', component: HomeComponent },
 	{ path: 'projects', component: ProjectsComponent },
+	{ path: 'resume', component: ResumeComponent },
 	{ path: '**', redirectTo: '' }
 ];
 
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
 		AppComponent,
 		ProjectsComponent,
 		ResumeComponent,
-		ContactComponent	
+		ContactComponent,
+		HomeComponent	
 	],
 	imports: [
 		BrowserModule,

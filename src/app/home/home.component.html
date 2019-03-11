@@ -1,0 +1,41 @@
+<div class="component" fxLayout="row" fxLayout.sm="column">
+	<div class="main">
+		<div class="logo">tec<img alt="X" src="../assets/images/logo_x.png"/>onic</div>
+		<div class="cover">
+			<p>
+				Brian Musinyan was first exposed to programming when he took an introductory C++ 
+				class at Glendale Community College. He was 20 years old then when he realized he 
+				found his true passion. Before that he was always fascinated with web design. 
+				Although he never had a chance of taking web design classes before UCLA; 
+				he still managed to learn Photoshop, CSS and HTML on his own. 
+				Soon he became experienced in C++ and decided to expand his programming 
+				knowledge at University of California, Los Angeles. The trend of self-learning 
+				continued through his community college and university years. 
+			</p>
+		</div>
+		<div class="work">
+			<div [ngx-scroll-to]="projectsRef">
+				<i class="fa fa-mug-hot fa-2x"></i>
+				<p>projects</p>
+			</div>				
+			<div [ngx-scroll-to]="aboutRef">
+				<i class="fa fa-graduation-cap fa-2x"></i> 
+				<p>resume</p>
+			</div>				
+			<div [ngx-scroll-to]="contactRef">
+				<i class="fa fa-envelope fa-2x"></i> 
+				<p>contact me</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div #projectsRef>
+	<app-projects></app-projects>
+</div>
+<div #aboutRef>
+	<app-resume></app-resume>
+</div>
+<div #contactRef>
+	<app-contact></app-contact>
+</div>
