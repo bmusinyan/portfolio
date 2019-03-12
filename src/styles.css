@@ -1,8 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
 
 body, html {
     scroll-behavior: smooth;
+    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Work Sans', sans-serif;
     background: #272833;
     padding: 0;

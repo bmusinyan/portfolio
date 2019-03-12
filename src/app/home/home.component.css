@@ -1,14 +1,22 @@
+/* cell phones */
+@media(max-width: 480px) {
+    .cover { margin: 20px !important; }
+    .logo { margin-top: 20px; }
+    .main { align-self: flex-start !important; }
+}
+
 .component {
     background-image: url(../../assets/images/banner16.png);
     background-position: center center;
     background-size: cover;
     min-height: 100vh;
     text-align: center;
+    display: flex;
 }
 .main {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    flex: 1;
+    align-self: center;
+    justify-content: center;
 }
 .logo { color: #ffffff; font-size: calc(16px + 4vh); }
 .logo img { height: calc(16px + 6vh); vertical-align: middle }
@@ -30,6 +38,7 @@
     background: rgba(0,0,0,.5);
     padding: 10px;
     border-radius: 5px;
+    /* margin-bottom: .5px; */
 }
 .work div {
     display: inline-block;
