@@ -13,27 +13,32 @@
 		</p>
 	</header>
 	<aside>
-		<h4>SKILLS</h4>
-		<ul class="p_left15">
-			<li>HTML / CSS</li>
-			<li>JavaScript</li>
-			<li>TypeScript</li>
-			<li>Angular</li>
-			<li>ExtJS</li>
-			<li>PHP</li>
-			<li>Node.js</li>
-			<li>D3</li>
-			<li>Raphale.js</li>
-		</ul>
-		<h4>LANGUAGES</h4>
-		<p>English</p>
-		<mat-progress-bar mode="determinate" value="95"></mat-progress-bar>
-		<p>Armenian</p>
-		<mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
-		<p>Russian</p>
-		<mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+		<div class="skills">
+			<h4>Skills</h4>
+			<ul class="p_left15">
+				<li>HTML / CSS</li>
+				<li>JavaScript</li>
+				<li>TypeScript</li>
+				<li>Angular</li>
+				<li>ExtJS</li>
+				<li>PHP</li>
+				<li>Node.js</li>
+				<li>D3</li>
+				<li>Raphale.js</li>
+			</ul>
+		</div>
+		<div class="languages">
+			<h4>Languages</h4>
+			<p>English</p>
+			<mat-progress-bar mode="determinate" value="95"></mat-progress-bar>
+			<p>Armenian</p>
+			<mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+			<p>Russian</p>
+			<mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+		</div>
 	</aside>
 	<article>
+		<!-- summary -->
 		<h4><i class="fas fa-user"></i> Profile</h4>
 		<section>
 			Down to earth software engineer with a soft spot for Web applications.
@@ -42,11 +47,28 @@
 			5+ years of experience in JavaScript frameworks such as ExtJS and Angular.
 			Skilled in HTML/CSS, PHP, SQL, Node.js, D3 and Electron. 
 		</section>
+
+		<!-- skills -->
+		<h4 class="sm_skills"><i class="fas fa-laptop-code"></i> Skills</h4>
+		<section class="sm_skills" id="_skills">
+			<i class="far fa-dot-circle"></i> HTML / CSS<br>
+			<i class="far fa-dot-circle"></i> JavaScript<br>
+			<i class="far fa-dot-circle"></i> Angular / TypeScript<br>
+			<i class="far fa-dot-circle"></i> ExtJS<br>
+			<i class="far fa-dot-circle"></i> PHP<br>
+			<i class="far fa-dot-circle"></i> Node.js<br>
+			<i class="far fa-dot-circle"></i> D3<br>
+			<i class="far fa-dot-circle"></i> Raphale.js<br>
+		</section>
+		
+		<!-- employment -->
 		<h4><i class="fas fa-briefcase"></i> Employment History</h4>
 		<section id="_joblist">
 			<i class="far fa-dot-circle"></i> Automai Corporation<br>
 			<b class="pink">May 2013 – Present</b>
 		</section>
+		
+		<!-- projects -->
 		<h4><i class="fas fa-project-diagram"></i> Projects</h4>
 		<section id="_projectlist">
 			<i class="far fa-dot-circle"></i> AppLoader<br>
@@ -148,6 +170,8 @@
 				</mat-chip-list>
 			</p>
 		</section>
+
+		<!-- education -->
 		<h4><i class="fas fa-graduation-cap"></i> Education</h4>
 		<section>
 			University of California Los Angeles<br>

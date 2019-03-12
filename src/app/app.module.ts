@@ -6,7 +6,7 @@ import { ScrollToModule } from "@nicky-lenaers/ngx-scroll-to";
 import { RouterModule, Routes } from '@angular/router';
 
 import { MatInputModule, MatFormFieldModule, MatButtonModule, MatCardModule,
-		 MatIconModule, MatProgressBarModule, MatChipsModule } from "@angular/material";
+		 MatIconModule, MatProgressBarModule, MatChipsModule, MatDividerModule } from "@angular/material";
 
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -42,7 +42,8 @@ const appRoutes: Routes = [
 		MatCardModule, 
 		MatIconModule,
 		MatProgressBarModule,
-		MatChipsModule
+		MatChipsModule,
+		MatDividerModule
 	],
 	providers: [],
 	bootstrap: [ AppComponent ]

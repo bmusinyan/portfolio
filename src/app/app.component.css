@@ -3,6 +3,7 @@ footer {
     padding-top: 20px;
     text-align: center;
 }
+footer ul { padding-left:  0; }
 .social li {
     display: inline-block;
     height: 2.5em;
