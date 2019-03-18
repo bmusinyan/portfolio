@@ -1,35 +1,35 @@
 /* cell phones */
 /* @media(max-width: 480px) {
-    .about { flex-direction: column; padding: 20px !important; }
-    .languages, .skills { display: none; }
-    .about article section { margin-left: 0; }
+  .about { flex-direction: column; padding: 20px !important; }
+  .languages, .skills { display: none; }
+  .about article section { margin-left: 0; }
 } */
 
 /* tables */
 @media screen and (max-width: 960px) {
-    .about { flex-direction: column; padding: 20px !important; }
-    .about article section { margin-left: 7px !important; }
-    .about article h4 { margin-left: 0 !important; }
-    .skills, .languages { display: none; }
-    .sm_skills { display: block !important; }
+  .about { flex-direction: column; padding: 20px !important; }
+  .about article section { margin-left: 7px !important; }
+  .about article h4 { margin-left: 0 !important; }
+  .skills, .languages { display: none; }
+  .sm_skills { display: block !important; }
 }
 
 .about {
-    background: #DEE1E6;
-    padding: 20px 15vw 50px; 
-    color: #272833;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  background: #DEE1E6;
+  padding: 20px 15vw 50px;
+  color: #272833;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .about header { text-align: center;  width: 100%; }
 .about header span:not(:first-child) {
-    border-left: 1px solid #a0a0a2;
-    margin-left: 10px;
-    padding-left: 10px; 
+  border-left: 1px solid #a0a0a2;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 .about header i { cursor: pointer; font-size: 24px; }
-.about header i:hover { color: rgb(222, 79, 79); }
+.about header i:hover { color: #de4f4f; }
 
 .about aside { flex: 1; }
 .about article { flex: 4; }
@@ -37,10 +37,10 @@
 .about article section { border-left: 2px solid #272833; margin-left: 40px; padding-left: 20px; }
 
 .sm_skills { display: none; }
-#_projectlist i, #_joblist i, #_skills i { 
-    margin-left: -29px;
-    background: #dee1e6;
-    font-size: 16px;
+#_projectlist i, #_joblist i, #_skills i {
+  margin-left: -29px;
+  background: #dee1e6;
+  font-size: 16px;
 }
 
 ::ng-deep .about .mat-progress-bar-buffer { background-color: #e9c5c5; }

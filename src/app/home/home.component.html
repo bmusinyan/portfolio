@@ -1,30 +1,45 @@
 <div class="component">
 	<div class="main">
 		<div class="logo">tec<img alt="X" src="../assets/images/logo_x.png"/>onic</div>
-		<div class="cover">
-			<p>
-				Brian Musinyan was first exposed to programming when he took an introductory C++ 
-				class at Glendale Community College. He was 20 years old then when he realized he 
-				found his true passion. Before that he was always fascinated with web design. 
-				Although he never had a chance of taking web design classes before UCLA; 
-				he still managed to learn Photoshop, CSS and HTML on his own. 
-				Soon he became experienced in C++ and decided to expand his programming 
-				knowledge at University of California, Los Angeles. The trend of self-learning 
-				continued through his community college and university years. 
-			</p>
+    <div class="cover">
+      <div class="cover_name">{{ coverText?.header_org }}</div>
+      <div class="cover_desc">{{ coverText?.desc_org }}</div>
+      <div class="cover_techs_title">I work with the following technologies:</div>
+      <div class="cover_techs">
+        <!-- <img src="../../assets/images/angular.png" alt="Angular">
+        <img src="../../assets/images/extjs.png" alt="ExtJS">
+        <img src="../../assets/images/d3.png" alt="D3">
+        <img src="../../assets/images/html.png" alt="HTML">
+        <img src="../../assets/images/css.png" alt="CSS">
+        <img src="../../assets/images/nodejs.png" alt="Node.js">
+        <img src="../../assets/images/express.png" alt="Express">
+        <img src="../../assets/images/php.png" alt="PHP">
+        <img src="../../assets/images/laravel.png" alt="Laravel">
+        <img src="../../assets/images/sqlite.png" alt="SQLite">
+        <img src="../../assets/images/mongodb.png" alt="MongoDB"> -->
+
+        <!-- <div *ngFor="let tech of techs" [ngClass]="tech.class">
+          <img [src]="tech.icon" [alt]="tech.icon" height="24px">
+          <p class="m0 p0">{{ tech.name }}</p>
+        </div> -->
+
+        <div><code>Angular, ExtJS, D3, Material, Bootstrap, HTML, CSS</code></div>
+        <div><code>Node.js / Express, Laravel, PHP, SQLite, MongoDB</code></div>
+
+      </div>
 		</div>
-		<div class="work">
+    <div class="work">
 			<div [ngx-scroll-to]="projectsRef">
 				<i class="fa fa-mug-hot fa-2x"></i>
 				<p>projects</p>
-			</div>				
+			</div>
 			<div [ngx-scroll-to]="aboutRef">
-				<i class="fa fa-graduation-cap fa-2x"></i> 
+				<i class="fa fa-graduation-cap fa-2x"></i>
 				<p>resume</p>
-			</div>				
+			</div>
 			<div [ngx-scroll-to]="contactRef">
-				<i class="fa fa-envelope fa-2x"></i> 
-				<p>contact me</p>
+				<i class="fa fa-envelope fa-2x"></i>
+				<p>contact</p>
 			</div>
 		</div>
 	</div>

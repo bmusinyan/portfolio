@@ -7,17 +7,19 @@
 
 
 body, html {
-    scroll-behavior: smooth;
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Work Sans', sans-serif;
-    background: #272833;
-    padding: 0;
-    margin: 0;
+  scroll-behavior: smooth;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Work Sans', sans-serif;
+  background: #272833;
+  padding: 0;
+  margin: 0;
 }
 
-.centered { text-align: center; } 
+.centered { text-align: center; }
 
 .w100pct { width: 100%;}
+
+.p0 { padding: 0 !important; }
 
 .p_top20 { padding-top: 20px !important; }
 
@@ -27,12 +29,14 @@ body, html {
 
 .p_right10 { padding-right: 10px; }
 
-.m_top20 { margin-top: 20px !important; } 
+.m0 { margin: 0 !important; }
+
+.m_top20 { margin-top: 20px !important; }
 .m_botton20 { margin-bottom: 20px; }
 
 
 .maincolor { color: #272833; }
-.pink { color: rgb(222, 79, 79); }
+.pink { color: #de4f4f; }
 
 
 .extjs { background:#89c910 !important; color:#203b08 !important; }
