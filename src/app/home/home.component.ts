@@ -30,9 +30,9 @@ export class HomeComponent implements OnInit {
       header_org: "HI, I'M BRIAN MUSINYAN",
       desc: '',
       desc_org: 'A developer who enjoys building Web Applicaions and a good cup of coffee.'
-    }
-    this.writeText(20, 0, 'header', 'header_org');
-    this.writeText(20, 0, 'desc', 'desc_org');
+    };
+    // this.writeText(20, 0, 'header', 'header_org');
+    // this.writeText(20, 0, 'desc', 'desc_org');
   }
 
 	ngOnInit() {}

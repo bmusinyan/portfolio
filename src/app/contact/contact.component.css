@@ -7,6 +7,9 @@
 }
 ::ng-deep .contact .mat-form-field-appearance-outline .mat-form-field-outline { color: #272833; }
 ::ng-deep .contact .mat-form-field.mat-focused .mat-form-field-label { color: #272833; }
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick { color: #ced222; }
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label { color: #ced222; }
+
 .contact .mat-input-element { color: #ffd2d2; }
 .contact button[type="submit"] { color: #272833; border-color: #22242c; }
 .contact button[type="submit"]:hover { background-color: #272833; color: #de4f4f; }

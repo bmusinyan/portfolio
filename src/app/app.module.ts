@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ScrollToModule } from "@nicky-lenaers/ngx-scroll-to";
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule, FormGroup, FormBuilder, Validators} from '@angular/forms';
 
 import { MatInputModule, MatFormFieldModule, MatButtonModule, MatCardModule,
 		 MatIconModule, MatProgressBarModule, MatChipsModule, MatDividerModule } from "@angular/material";
@@ -27,7 +28,7 @@ const appRoutes: Routes = [
 		ProjectsComponent,
 		ResumeComponent,
 		ContactComponent,
-		HomeComponent	
+		HomeComponent
 	],
 	imports: [
 		BrowserModule,
@@ -35,11 +36,12 @@ const appRoutes: Routes = [
 		FlexLayoutModule,
 		ScrollToModule.forRoot(),
 		RouterModule.forRoot(appRoutes),
-
+    ReactiveFormsModule,
+    FormsModule,
 		MatInputModule,
 		MatFormFieldModule,
 		MatButtonModule,
-		MatCardModule, 
+		MatCardModule,
 		MatIconModule,
 		MatProgressBarModule,
 		MatChipsModule,

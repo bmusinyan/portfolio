@@ -37,7 +37,7 @@
 .about article section { border-left: 2px solid #272833; margin-left: 40px; padding-left: 20px; }
 
 .sm_skills { display: none; }
-#_projectlist i, #_joblist i, #_skills i {
+.projectlist i, #_joblist i, #_skills i {
   margin-left: -29px;
   background: #dee1e6;
   font-size: 16px;

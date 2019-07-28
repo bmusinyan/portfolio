@@ -1,19 +1,20 @@
 <div class="contact">
-	<h2 class="maincolor centered">For questions or job offers</h2>
-	<form>
+	<h2 class="maincolor centered">Contact for questions or suggestions</h2>
+	<form [formGroup]="contactform" (submit)="sendEmail()">
 		<mat-form-field class="w100pct" appearance="outline">
-			<mat-label>Subject</mat-label>
-			<input matInput placeholder="Placeholder">
+			<mat-label>Subject *</mat-label>
+			<input matInput placeholder="Placeholder" formControlName="subject">
 		</mat-form-field>
 		<mat-form-field class="w100pct" appearance="outline">
-			<mat-label>Email</mat-label>
-			<input type="email" matInput placeholder="Placeholder">
+			<mat-label>Name or Company *</mat-label>
+			<input matInput placeholder="Placeholder" formControlName="name">
 		</mat-form-field>
 		<mat-form-field class="w100pct" appearance="outline">
-			<mat-label>Message</mat-label>
-			<textarea matInput placeholder="Placeholder"></textarea>
+			<mat-label>Message *</mat-label>
+			<textarea matInput placeholder="Placeholder" formControlName="message"></textarea>
 		</mat-form-field>
+    <p *ngIf="errormsg" class="yellow m_top0">{{ errormsg }}</p>
 		<button type="submit" mat-stroked-button>
 			<i class="fa fa-paper-plane"></i> Send to Brian</button>
-	</form>
+  </form>
 </div>
