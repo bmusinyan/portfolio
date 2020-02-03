@@ -13,8 +13,14 @@
 			<mat-label>Message *</mat-label>
 			<textarea matInput placeholder="Placeholder" formControlName="message"></textarea>
 		</mat-form-field>
-    <p *ngIf="errormsg" class="yellow m_top0">{{ errormsg }}</p>
+		<p *ngIf="errormsg" class="yellow m_top0">
+            <span>{{ errormsg }}</span>
+        </p>
+		<p *ngIf="waiting" class="yellow m_top0">
+            <mat-spinner [diameter]="20"></mat-spinner>
+        </p>
+
 		<button type="submit" mat-stroked-button>
 			<i class="fa fa-paper-plane"></i> Send to Brian</button>
-  </form>
+    </form>
 </div>

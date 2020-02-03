@@ -1,0 +1,30 @@
+mat-toolbar.projlist { background: #272833; }
+.projlist { padding: 10px 30px; }
+.logo { color: #ffffff; font-size: 36px; }
+.logo img { height: 50px; vertical-align: middle }
+
+#_tp_nav { width: 250px; float: left; }
+#_tp_nav mat-list-item:hover {
+  background-color: #a7a7a7;
+  color: #272833 !important;
+}
+#_tp_content {
+    float: left;
+    width: calc(100% - 285px);
+    min-width: 500px;
+    padding: 30px 0 60px 30px;
+    border-left: 1px dashed #adadad;
+    overflow: auto;
+    height: calc(100vh - 295px);
+}
+.weather_app {
+  border: 2px solid #a7a7a7;
+  border-radius: 5px;
+  height: 500px;
+  margin-right: 30px;
+}
+.list_of_projects {
+  padding: 5px 15px;
+  background: #33B39A;
+  font-size: 20px;
+}

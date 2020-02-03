@@ -9,6 +9,7 @@
 ::ng-deep .contact .mat-form-field.mat-focused .mat-form-field-label { color: #272833; }
 ::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick { color: #ced222; }
 ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label { color: #ced222; }
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle { stroke: #ced222; }
 
 .contact .mat-input-element { color: #ffd2d2; }
 .contact button[type="submit"] { color: #272833; border-color: #22242c; }

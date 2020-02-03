@@ -7,17 +7,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule, FormGroup, FormBuilder, Validators} from '@angular/forms';
 
 import { MatInputModule, MatFormFieldModule, MatButtonModule, MatCardModule,
-		 MatIconModule, MatProgressBarModule, MatChipsModule, MatDividerModule } from "@angular/material";
+    MatProgressSpinnerModule, MatListModule, MatToolbarModule, MatTooltipModule,
+		MatIconModule, MatProgressBarModule, MatChipsModule, MatDividerModule } from "@angular/material";
 
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { ProjectsViewComponent } from './projects-view/projects-view.component';
 
 const appRoutes: Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: 'projects', component: ProjectsComponent },
+	{ path: 'projects/weather', component: ProjectsViewComponent },
 	{ path: 'resume', component: ResumeComponent },
 	{ path: '**', redirectTo: '' }
 ];
@@ -28,7 +31,8 @@ const appRoutes: Routes = [
 		ProjectsComponent,
 		ResumeComponent,
 		ContactComponent,
-		HomeComponent
+		HomeComponent,
+		ProjectsViewComponent
 	],
 	imports: [
 		BrowserModule,
@@ -38,10 +42,14 @@ const appRoutes: Routes = [
 		RouterModule.forRoot(appRoutes),
     ReactiveFormsModule,
     FormsModule,
-		MatInputModule,
-		MatFormFieldModule,
+    MatListModule,
+    MatInputModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatTooltipModule,
 		MatButtonModule,
-		MatCardModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
 		MatIconModule,
 		MatProgressBarModule,
 		MatChipsModule,
